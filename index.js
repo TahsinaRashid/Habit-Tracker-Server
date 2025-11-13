@@ -31,7 +31,7 @@ async function run() {
     })
 
     app.get('/addHabit/:id',async (req,res)=>{
-      const id=req.params
+      const {id}=req.params
       console.log(id);
 
       res.send({
